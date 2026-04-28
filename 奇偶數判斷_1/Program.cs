@@ -30,12 +30,33 @@
             //    Console.WriteLine("輸入錯誤！請務必輸入有效的整數數字。");
             //}
 
+            /*
             Console.Write("請輸入數字：");
             if (int.TryParse(Console.ReadLine(), out int n))
             {
                 // 一行搞定判斷與輸出
                 Console.WriteLine($"{n} 是 {(n % 2 == 0 ? "偶數" : "奇數")}");
             }
+            */
+
+
+            Console.Write("請輸入一個整數：");
+
+            var input = Console.ReadLine();
+            var num = int.Parse(input);
+            if (IsOdd(num))
+            {
+                Console.WriteLine($"{num} 是奇數!");
+            }
+            else
+            {
+                Console.WriteLine($"{num} 是偶數!");
+            }
+        }
+
+        private static bool IsOdd(int num)
+        {
+            return num % 2 == 0;
         }
     }
 }

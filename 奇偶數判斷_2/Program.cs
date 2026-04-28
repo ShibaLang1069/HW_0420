@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            /*
             // 1. 提示並讀取使用者輸入
             Console.WriteLine("請輸入一串數字，並以逗號分隔：");
             string input = Console.ReadLine();
@@ -41,6 +42,44 @@
             Console.WriteLine("\n--- 分類結果 ---");
             Console.WriteLine("奇數數列：" + string.Join(", ", odds));
             Console.WriteLine("偶數數列：" + string.Join(", ", evens));
+            */
+
+
+
+            Console.WriteLine("請輸入用,分隔的數字:");
+            var input = Console.ReadLine();
+            //切,
+            var arr = input.Split(',');
+            //奇數的List  偶數的List
+            var oddList = new List<int>();
+            var evenList = new List<int>();
+
+            foreach (var item in arr)
+            {
+                var num = int.Parse(item);
+                
+                if (isOdd(num))
+                {
+                    oddList.Add(num);
+                }
+                else
+                {
+                    evenList.Add(num);
+                }
+            }
+
+            //排序
+            var sortedOddResult = oddList.OrderBy((num) => num); //前面的num是變數
+
+            var sortedEvenResult = evenList.OrderBy((num) => num);
+
+            Console.WriteLine($"奇數: {string.Join(",", sortedOddResult)}");
+            Console.WriteLine($"偶數: {string.Join(",", sortedEvenResult)}");
+        }
+
+        private static bool isOdd(int num)
+        {
+            return num % 2 == 0;
         }
     }
 }
