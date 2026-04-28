@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="奇偶數判斷_1/奇偶數判斷_1.csproj" />
+  <Project Path="奇偶數判斷_2/奇偶數判斷_2.csproj" Id="cedca5f4-d2da-4509-8934-a2c3792d83b3" />
+  <Project Path="數字字串排序與反向顯示_1/迴圈倒置_1.csproj" Id="fcd76920-fedf-4c0b-bc4c-9bbd43b38b56" />
+  <Project Path="迴圈倒置_2/迴圈倒置_2.csproj" Id="3b1cdfc8-c12e-416a-9c05-e0e8fe2a2308" />
+  <Project Path="閏年判斷/閏年判斷.csproj" Id="100de2d3-d7f8-4190-bfbe-6c479e0b284e" />
+</Solution>
