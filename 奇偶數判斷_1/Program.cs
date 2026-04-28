@@ -30,7 +30,7 @@
             //    Console.WriteLine("輸入錯誤！請務必輸入有效的整數數字。");
             //}
 
-            Console.Write("請輸入數字：");
+            Console.Write("請輸入數字： ");
             if (int.TryParse(Console.ReadLine(), out int n))
             {
                 // 一行搞定判斷與輸出
